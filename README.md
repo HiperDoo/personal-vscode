@@ -42,3 +42,8 @@ Tome en cuenta que los ajustes y extensiones están acomodadas a mis necesidades
 [`TODO Highlight`](https://github.com/wayou/vscode-todo-highlight)<br>
 [`WebGL GLSL Editor`](https://github.com/racz16/WebGL-GLSL-Editor)<br>
 </details>
+
+<img src="https://github.com/HiperDoo/personal-vscode/blob/main/Pictures/SS0.jpg?raw=true">
+<img src="https://github.com/HiperDoo/personal-vscode/blob/main/Pictures/SS1.png?raw=true">
+<img src="https://github.com/HiperDoo/personal-vscode/blob/main/Pictures/SS2.png?raw=true">
+<img src="https://github.com/HiperDoo/personal-vscode/blob/main/Pictures/SS3.png?raw=true">
