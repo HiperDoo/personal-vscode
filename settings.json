@@ -1,4 +1,16 @@
 {
+    // Cuando VS Code es actualizado, este suele desactivar algunas de las
+    // extensiones (visuales en general), por lo que hay que volverlas a
+    // activar con los siguientes comandos:
+    //    > Enable Apc extension
+    //    > Blur Menu - Enable Blur
+    //    > Animations: Install Animations
+    //    > Animations: Enable Animations
+
+    // En Linux, es necesario otorgar permisos especiales a la carpeta donde
+    // está instalado vscode para el funcionamiento de algunas extensiones.
+    //    > sudo chown -R $(whoami) /opt/visual-studio-code
+
     "window.title": "${folderPath}",
     "window.titleBarStyle": "native",
     "window.menuBarVisibility": "toggle",
@@ -15,11 +27,6 @@
     "editor.renderWhitespace": "trailing",
     "editor.inlayHints.enabled": "off",
 
-    // Enable Apc extension
-    // Blur Menu - Enable Blur
-    // Animations: Install Animations
-    // Animations: Enable Animations
-
     "workbench.colorTheme": "Visual Studio 2017 Light - C++",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.editor.editorActionsLocation": "hidden",
@@ -30,9 +37,6 @@
         "editorBracketHighlight.foreground2": "#B4B4B4",
         "editorBracketHighlight.foreground3": "#B4B4B4",
         "editorBracketHighlight.unexpectedBracket.foreground": "#B4B4B4",
-        // En el caso de Arch Linux, ejecute esto para aplicar los cambios a todas
-        // aquellas extensiones que modifiquen el CSS.
-        // sudo chown -R $(whoami) /opt/visual-studio-code
         "menu.background": "#2e333b70",
         "menu.selectionBackground": "#4247509a",
         "editorWidget.background": "#51586320",
@@ -79,10 +83,10 @@
 
     "C_Cpp.errorSquiggles": "enabled",
     "C_Cpp.default.cppStandard": "c++20",
-    // Windows
-    //"C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++",
     // Linux
     "C_Cpp.default.compilerPath": "/usr/bin/g++",
+    // Windows
+    //"C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++",
 
     "cmake.showOptionsMovedNotification": false,
     "cmake.configureOnOpen": false,
@@ -194,8 +198,6 @@
         ".codicon-extensions-view-icon:before": "content: '\\ea78';",
 
         ".monaco-action-bar .badge .badge-content": "display: none;",
-
-        // Colocar un icono animado???
      },
      "apc.electron": {
         "titleBarStyle": "hidden",
@@ -215,7 +217,10 @@
     },
 
     "apc.imports": [
+        // Linux
         "file:///home/hiperdoo/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
+        // Windows
+        //"file:///c:/Users/MasterBitPC/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
     ],
 
     "background.editorBackgrounds": [
@@ -252,14 +257,6 @@
 
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-
-    "theme-by-language.themes": {
-        //"*": "Dreamweaver Dark Theme"
-        "*": "Visual Studio 2017 Light - C++",
-        //"*": "Visual Studio 2017 Dark - C++",
-        //"python": "Dark+ Python",
-        //"cpp": "Visual Studio 2017 Light - C++",
-    },
 
     "git.openRepositoryInParentFolders": "never",
 
