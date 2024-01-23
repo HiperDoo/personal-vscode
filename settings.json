@@ -1,0 +1,280 @@
+{
+    "window.title": "${folderPath}",
+    "window.titleBarStyle": "native",
+    "window.menuBarVisibility": "toggle",
+    "window.commandCenter": false,
+
+    "telemetry.telemetryLevel": "off",
+
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.emptyWindow": false,
+    "security.workspace.trust.enabled": false,
+
+    "editor.bracketPairColorization.enabled": true,
+    "editor.renderWhitespace": "trailing",
+    "editor.inlayHints.enabled": "off",
+
+    // Enable Apc extension
+    // Blur Menu - Enable Blur
+    // Animations: Install Animations
+    // Animations: Enable Animations
+
+    "workbench.colorTheme": "Visual Studio 2017 Light - C++",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.startupEditor": "none",
+    "workbench.layoutControl.enabled": false,
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground1": "#B4B4B4",
+        "editorBracketHighlight.foreground2": "#B4B4B4",
+        "editorBracketHighlight.foreground3": "#B4B4B4",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#B4B4B4",
+        // En el caso de Arch Linux, ejecute esto para aplicar los cambios a todas
+        // aquellas extensiones que modifiquen el CSS.
+        // sudo chown -R $(whoami) /opt/visual-studio-code
+        "menu.background": "#2e333b70",
+        "menu.selectionBackground": "#4247509a",
+        "editorWidget.background": "#51586320",
+        "quickInput.background": "#2e333b00",
+        "notifications.background": "#29303bd7",
+    },
+    "workbench.editorAssociations": {
+        "*.bin": "hexEditor.hexedit",
+        "*.obj": "3dviewer.viewer"
+    },
+
+    "terminal.integrated.cursorStyleInactive": "line",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorWidth": 2,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.external.linuxExec": "kitty",
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "zsh",
+            "args": []
+        }
+    },
+
+    "files.exclude": {
+        "**/.git": false,
+        ".git": true,
+        ".gitignore": true,
+        ".gitmodules": true,
+        ".vscode": true,
+        ".pio/": true,
+        "build/": true
+    },
+
+    "editor.fontFamily": "Hack Nerd Font, monospace, monospace",
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "apc.font.family": "Hack Nerd Font",
+    "apc.monospace.font.family": "Hack Nerd Font",
+
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+
+
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.default.cppStandard": "c++20",
+    // Windows
+    //"C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++",
+    // Linux
+    "C_Cpp.default.compilerPath": "/usr/bin/g++",
+
+    "cmake.showOptionsMovedNotification": false,
+    "cmake.configureOnOpen": false,
+    "cmake.configureOnEdit": false,
+    "cmake.buildTask": true,
+    "cmake.clearOutputBeforeBuild": false,
+    "cmake.buildDirectory": "${workspaceFolder}/build/debug",
+
+    "todohighlight.keywords": [
+        {
+            "text": "NOTE:",
+            "color": "white",
+            "backgroundColor": "#6FB85F",
+        },
+        {
+            "text": "TODO:",
+            "color": "white",
+            "backgroundColor": "#EBA20C",
+        },
+    ],
+
+    "actionButtons": {
+        "defaultColor": "3C406E",
+        "loadNpmCommands": false,
+        "reloadButton": null,
+        // iconos: https://code.visualstudio.com/api/references/icons-in-labels
+        "commands": [
+            {
+                "name": " </HiperDoo> ",
+                "color": "#A779F3",
+            },
+            {
+                "name": "$(file-directory)",
+                "useVsCodeApi": true,
+                "command": "workbench.action.files.openFolderInNewWindow"
+            },
+            {
+                "name": "$(window)",
+                "useVsCodeApi": true,
+                "command": "workbench.action.openSettings"
+            },
+            {
+                "name": "$(gear)",
+                "useVsCodeApi": true,
+                "command": "workbench.action.openSettingsJson"
+            },
+            {
+                "name": "$(debug-restart)",
+                "useVsCodeApi": true,
+                "command": "workbench.action.reloadWindow"
+            },
+            {
+                "name": "$(home) Arduino",
+                "useVsCodeApi": true,
+                "command": "platformio-ide.showHome"
+            },
+            {
+                "name": "$(check) Build",
+                "useVsCodeApi": true,
+                "command": "platformio-ide.build"
+            },
+            {
+                "name": "$(arrow-right) Upload",
+                "useVsCodeApi": true,
+                "command": "platformio-ide.upload"
+            },
+            {
+                "name": "$(package) Create Project",
+                "command": "ls"
+            },
+            {
+                "name": "$(symbol-method) Setup C++",
+                "command": " ./sh.bat setup"
+            },
+            {
+                "name": "$(debug-alt) Debug C++",
+                "useVsCodeApi": true,
+                "command": "cmake.debugTargetAll"
+            },
+            {
+                "name": "$(flame) Compile C++",
+                "command": " ./sh.bat build"
+            },
+            {
+                "name": "$(zap) Run C++",
+                "command": " ./sh.bat run"
+            },
+        ]
+    },
+
+    "apc.stylesheet": {
+        ".statusbar .left-items .first-visible-item > a": "font-weight: bold;",
+
+        ".letterpress": "display: none;",
+        ".shortcuts": "display: none;",
+
+        ".monaco-workbench .part.statusbar:focus": "outline-color: #00000000 !important;",
+        ".explorer-folders-view .monaco-list:before": "outline-color: #00000000 !important;",
+        ".monaco-toolbar .monaco-action-bar .actions-container > li:first-child": "visibility: hidden;",
+
+        ".title-label h2": "text-indent: -10ch;",
+        ".title-actions .actions-container": "display: none;",
+        ".global-activity-actionbar": "display: none;",
+
+        "#workbench.parts.activitybar": "position: relative;",
+        ".split-view-view .activitybar .composite-bar": "position: absolute; left: 50%; transform: translate(-50%);",
+
+        ".codicon-explorer-view-icon:before": "content: '\\eae9';",
+        ".codicon-extensions-view-icon:before": "content: '\\ea78';",
+
+        ".monaco-action-bar .badge .badge-content": "display: none;",
+
+        // Colocar un icono animado???
+     },
+     "apc.electron": {
+        "titleBarStyle": "hidden",
+        "titleBarOverlay": {
+            "color": "#2f3241",
+            "symbolColor": "#74b1be",
+        }
+    },
+    "apc.activityBar": {
+        "position": "top",
+        "size": 40,
+        "itemSize": 40,
+    },
+    "apc.statusBar": {
+        "position": "top",
+        "height": 24
+    },
+
+    "apc.imports": [
+        "file:///home/hiperdoo/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
+    ],
+
+    "background.editorBackgrounds": [
+        "/home/hiperdoo/Pictures/vscode_editor.jpeg"
+    ],
+    "background.panelBackgrounds": [
+        "/home/hiperdoo/Pictures/vscode_terminal.jpg"
+    ],
+    "background.backgroundSize": [
+        "Cover",
+        "Cover",
+        "Cover",
+        "Cover"
+    ],
+    "background.backgroundAlignment": [
+        "Center Center",
+        "Top Right",
+        "Center Center",
+        "Top Right"
+    ],
+
+    "animations.Install-Method": "Apc Customize UI++",
+    "animations.Enabled": true,
+
+    "hexeditor.columnWidth": 8,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.inspectorType": "aside",
+    "hexeditor.defaultEndianness": "little",
+
+    "webgl-glsl-editor.codeInjection": true,
+    "webgl-glsl-editor.codeInjectionSource": [
+        "#version 450 core"
+    ],
+
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    "theme-by-language.themes": {
+        //"*": "Dreamweaver Dark Theme"
+        "*": "Visual Studio 2017 Light - C++",
+        //"*": "Visual Studio 2017 Dark - C++",
+        //"python": "Dark+ Python",
+        //"cpp": "Visual Studio 2017 Light - C++",
+    },
+
+    "git.openRepositoryInParentFolders": "never",
+
+    "vscord.app.name": "Visual Studio Code",
+    "vscord.status.details.text.notInFile": "Configurando un archivo...",
+    "vscord.status.problems.text": "- {problems_count} errores",
+    "vscord.status.details.text.debugging": "Debugueando {file_name}{file_extension}",
+    "vscord.status.details.text.editing": "En {workspace} {problems}",
+    "vscord.status.details.text.noWorkSpaceText": "fuera de trabajo",
+    "vscord.status.state.text.debugging": "Debugueando {workspace}",
+    "vscord.status.state.text.editing": "Trabajando en {file_name}{file_extension}:{current_line}:{current_column}",
+    "vscord.status.state.text.viewing": "Viendo {file_name}{file_extension}",
+    "vscord.status.image.small.notInFile.text": "Configurando...",
+    "vscord.status.idle.check": false,
+    "vscord.status.idle.enabled": false,
+    "vscord.status.state.idle.enabled": false,
+    "vscord.behaviour.suppressNotifications": true,
+}
